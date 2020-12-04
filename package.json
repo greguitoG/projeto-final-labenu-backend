@@ -1,0 +1,22 @@
+{
+  "name": "projeto-fullstack-labenu-backend",
+  "version": "1.0.0",
+  "description": "Neste repositório ficará toda a parte de back-end do projeto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "clear && echo \"Running tests...\" && jest",
+    "start": "tsc && node --inspect ./build/src/index.js",
+    "dev": " ts-node-dev ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greguitoG/projeto-fullstack-labenu-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greguitoG/projeto-fullstack-labenu-backend/issues"
+  },
+  "homepage": "https://github.com/greguitoG/projeto-fullstack-labenu-backend#readme"
+}
