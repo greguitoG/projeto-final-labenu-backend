@@ -21,3 +21,5 @@ export class Authenticator {
         return {id: result.id};
     };
 };
+
+export default new Authenticator();
