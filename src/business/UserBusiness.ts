@@ -75,7 +75,7 @@ export class UserBusiness {
                 };
             };
 
-            const user: User = await this.userDatabase.getUserByEmailOrNickname(email ?? nickname);
+            const user: User | undefined  = await this.userDatabase.getUserByEmailOrNickname(email ?? nickname);
 
             if (!user) {
                 throw new CustomError(401, "Invalid credentials.");
