@@ -25,6 +25,19 @@ export class UserController {
             res.status(statusCode || 400).send({ message });
         };
     };
+
+    public login = async (req: Request, res: Response) => {
+        try {
+            const { email, nickname, password} = req.body;
+
+            const result = await this.userBusiness.login(email, nickname, password);
+
+            res.status(200).send(result);
+        } catch (error) {
+            const { statusCode, message } = error;
+            res.status(statusCode || 400).send({ message });
+        };
+    };
 };
 
 export default new UserController(userBusiness)
